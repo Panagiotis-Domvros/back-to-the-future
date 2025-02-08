@@ -46,13 +46,9 @@
     </style>
     <script>
         const data = {
-            "Humans live on Mars.": {
-                "Leonardo da Vinci": "To live on Mars, humans must master engineering, just as I designed flying machines before their time. Science and creativity will shape the first Martian city. But beware—without wisdom, technology alone is dangerous.",
-                "Winston Churchill": "Mars is a new frontier, but it must be secured wisely. Humanity’s expansion must be governed by laws, democracy, and stability—or else it will repeat Earth’s mistakes."
-            },
-            "AI runs the world.": {
-                "Karl Marx": "If AI controls the means of production, who owns it? If the people, it will bring equality. If the corporations, it will enslave us all.",
-                "Nikola Tesla": "AI must serve humanity, not replace it. But beware, if programmed without ethics, it will not see the difference."
+            "Οι άνθρωποι αποικίζουν τον Άρη.": {
+                "Λεονάρντο ντα Βίντσι": "Για να ζήσουμε στον Άρη, πρέπει να κατακτήσουμε τη μηχανική, όπως σχεδίασα ιπτάμενες μηχανές πριν την εποχή τους. Η επιστήμη και η δημιουργικότητα θα διαμορφώσουν την πρώτη αποικία.",
+                "Ουίνστον Τσώρτσιλ": "Ο Άρης είναι ένα νέο σύνορο, αλλά πρέπει να διασφαλιστεί σοφά. Η επέκταση της ανθρωπότητας πρέπει να κυβερνάται από νόμους και σταθερότητα."
             }
         };
 
@@ -61,7 +57,7 @@
         function generateScenario() {
             const scenarios = Object.keys(data);
             currentScenario = scenarios[Math.floor(Math.random() * scenarios.length)];
-            document.getElementById("scenario").innerText = `Scenario: ${currentScenario}`;
+            document.getElementById("scenario").innerText = `Σενάριο: ${currentScenario}`;
             generateCharacters();
         }
 
@@ -76,18 +72,16 @@
     </script>
 </head>
 <body>
-    <h2>Δημιουργία: Παναγιώτης Δόμβρος 2025 (CC BY-NC)</h2>
-    <h2>Created by Panagiotis Domvros 2025 (CC BY-NC)</h2>
-    <h2 class="creator">Created by Panagiotis Domvros 2025 (CC BY-NC)</h2>
+    <h2 class="creator">Δημιουργία: Παναγιώτης Δόμβρος 2025 (CC BY-NC)</h2>
     <h1>⚡ Back to the Future ⚡</h1>
-    <p>In this activity, as soon as you click on the button, you will be randomly assigned a scenario about a future historical outcome and the views prominent European historical figures might have had on it if they were alive (based on evidence of their beliefs). Study their opinions and then write your own view, agreeing or disagreeing with them. Make sure you provide arguments.</p>
-    <button class="scenario-button" onclick="generateScenario()">🎭 Generate Scenario</button>
+    <p>Σε αυτή τη δραστηριότητα, μόλις πατήσετε το κουμπί, θα σας ανατεθεί τυχαία ένα σενάριο για ένα μελλοντικό ιστορικό αποτέλεσμα και οι απόψεις που μπορεί να είχαν εξέχουσες ευρωπαϊκές ιστορικές προσωπικότητες αν ζούσαν (βασισμένες σε στοιχεία των πεποιθήσεών τους). Μελετήστε τις απόψεις τους και γράψτε τη δική σας άποψη, συμφωνώντας ή διαφωνώντας μαζί τους. Βεβαιωθείτε ότι παρέχετε επιχειρήματα.</p>
+    <button class="scenario-button" onclick="generateScenario()">🎭 Δημιούργησε Σενάριο</button>
     <p id="scenario"></p>
     <p id="character1"></p>
     <p id="character2"></p>
     <br>
     <a class="answer-button" href="https://docs.google.com/forms/d/e/1FAIpQLScPhob6wnSo_fW6EE9ppbQ-QzWGOdSGi1NDqKczQ9TlglNwUQ/viewform?usp=dialog" target="_blank">
-        📝 Write Your Own View
+        📝 Γράψτε τη Δική σας Άποψη
     </a>
 </body>
 </html>
